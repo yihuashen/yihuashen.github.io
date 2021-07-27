@@ -4,13 +4,261 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+  crossorigin="anonymous"/>
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
   <link rel="stylesheet" href="style.css">
   <title>Yihua Shen's Personal Website</title>
 </head>
 <body>
-  Hello
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
+  <!--Navbar-->
+  <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand"><i class="bi bi-house-door"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experiences" class="nav-link">Experiences</a>
+          </li>
+          <li class="nav-item">
+            <a href="#activities" class="nav-link">Activities</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Showcase -->
+  <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+      <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center">
+          <div>
+            <h1>Hi! My name is <span class="text-warning">Yihua (Merry) Shen</span></h1>
+            <p class="lead my-4">
+              I am a Sophomore student at the University of Michigan studying Computer Science. <br>
+              Email: yihuashen10@outlook.com
+            </p>
+            <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/yihuamerryshen/" role="button"><i class="bi bi-linkedin"></i></a>
+            <a class="btn btn-primary btn-lg" href="https://github.com/yihuashen" role="button"><i class="bi bi-github"></i></a>
+            <a class="btn btn-primary btn-lg" href="https://drive.google.com/file/d/1ycJ7cB2TWi3HAmg6EttK60sLNKCIkPHC/view?usp=sharing" role="button"><i class="bi bi-file-earmark-text"></i></a>
+          </div>
+        </div>
+        <img class="img-fluid w-50 d-none d-sm-block" src="img/resume.svg" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <!-- <section class="bg-primary p-5">
+    <div class="container">
+      <h3>Skills: Python, JavaScript (ES6), React, Django, C++, HTML, CSS, Bootstrap, AGILE/SCRUM</h3>
+    </div>
+
+  </section> -->
+  <!-- Education -->
+  <section class="bg-light text-dark p-5" id="education">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <img src="img/school.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md p-5">
+          <h2>Education</h2>
+          <p class="lead">University of Michigan</p>
+          <p>
+            Bachelor of Science in Computer Science <br>
+            Bachelor of Arts in Psychology <br>
+            Anticipated Graduation: Spring, 2024 <br>
+            GPA: 3.8/4.0
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                EECS 183
+              </h3>
+              <p class="card-text">
+                Intro to Computer Science and Programming <br>
+                Languages include C++ and Python
+              </p>
+              <a href="https://eecs183.github.io/eecs183.org/courseinfo.html" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                EECS 203
+              </h3>
+              <p class="card-text">
+                Intro to the Mathematical Foundations of Computer Science
+              </p>
+              <a href="https://ece.engin.umich.edu/academics/course-information/course-descriptions/eecs-203/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-laptop"></i>
+              </div>
+              <h3 class="card-title mb-3">
+                EECS 280 [Fall, 2021]
+              </h3>
+              <p class="card-text">
+                Programming and Intro Data Structures <br>
+                CS fundamentals, with programming in C++
+              </p>
+              <a href="https://eecs280staff.github.io/eecs280.org/" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experiences -->
+  <section class="bg-dark text-light" id="experiences">
+    <div class="container pt-5">
+      <div>
+        <h2>Experiences</h2>
+        <hr>
+        <div>
+          <p class="lead">Software Development Intern <i class="fab fa-python"></i>&#160<img src="img/django.svg" alt=""></p>
+          <p>
+          University of Michigan Information and Technology Services	 <br>
+          05/2021 ― 08/2021 <br>
+          • Initiated the development of the interface within account management app using Django to track and manage Non-person Entity accounts across the university <br>
+          • Conducted vulnerability assessments to identify security risks and enable further mitigation <hr>
+          </p>
+        </div>
+        <div>
+          <p class="lead">Software Development Intern <i class="fab fa-js-square"></i>&#160<i class="fab fa-react"></i></p>
+          <p>
+          MREN	 <br>
+          12/2020 ― 02/2021 <br>
+          • Primarily focused on the development of the frontend using React within the MERN stack  <br>
+          • Worked on developing a custom date picker feature within the application <hr>
+          </p>
+        </div>
+        <div>
+          <p class="lead">Software Engineering Teaching Assistant <i class="fab fa-python"></i>&#160<img src="img/django.svg" alt="">&#160<i class="fab fa-react"></i>&#160<i class="fab fa-js-square"></i>&#160<img src="img/git.svg" alt="">&#160<img src="img/postgresql.svg" alt=""></p>
+          <p>
+          Code Platoon	 <br>
+          10/2020 ― 12/2020 <br>
+          • Assisted military veterans and spouses in learning full-stack web development in a bootcamp setting <br>
+          • Curriculum included: Python, Django, React, JavaScript (ES6), PostgreSQL <hr>
+          </p>
+        </div>
+        <div>
+          <p class="lead">Tech Intern</p>
+          <p>
+          GAOTek	 <br>
+          09/2020 ― 12/2020 <br>
+          • Excelled in facilitating optimal accuracy in drafting and editing technical listings for the company’s Amazon catalog <br>
+          • Contributed to the successful planning of the website development project in alignment with current marketing strategies <hr>
+          </p>
+        </div>
+        <div>
+          <p class="lead">Office Assistant</p>
+          <p>
+          University of Michigan	 <br>
+          01/2020 ― 03/2020 <br>
+          • Provided oversight for daily operations across the department faculty and also screened inbound phone calls for prompt resolution of client issues while also escalating the complex issues to the appropriate department <br>
+          • Acknowledged for supporting campaigns focused on creating social awareness involving planning and implementation of departmental events and programs for supporting African American students <hr>
+          </p>
+        </div>
+      </div>
+  </section>
+  <section id="activities">
+    <div class="container pt-5">
+      <div>
+        <h2>Activities</h2>
+        <hr>
+        <div>
+          <p class="lead">CodePath Cybersecurity Participant</p>
+          <p>
+          Spring, 2021 <br>
+          • Participated in a program developed in partnership with Facebook that focuses on teaching college students the fundamentals of web application security through hands-on experience <hr>
+          </p>
+        </div>
+        <hr>
+        <div>
+          <p class="lead"><a href="https://www.credly.com/badges/e6e3f1ee-6cb4-41ce-95ea-3ec818733eeb?source=linked_in_profile">Certified SAFe® 5 Practitioner Certification</a></p>
+          <p>
+          January, 2021 <br>
+          • Completed course and received certification in Scrum, Kanban, and XP in a SAFe environment<hr>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-5" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <hr>
+      <div class="row g-2">
+        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img class="rounded mb-3 col-md-6 col-lg-3 img-fluid" src="img/website.svg" alt="">
+              <h3 class="card-title mb-3">Personal Website<button type="button" class="btn btn-light"><a href="https://github.com/yihuashen/personal-website"><i class="bi bi-github"></i></a></button></h3>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%" >HTML/Bootstrap (100%)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 d-flex align-items-stretch">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+              <img class="rounded mb-3 col-md-6 col-lg-3 img-fluid" src="img/perfsonar-logo.svg" alt="">
+              <h3 class="card-title mb-3"><a href="https://www.perfsonar.net/">perfSONAR Open Source Project</a><button type="button" class="btn btn-light"><a href="https://github.com/perfsonar/pscheduler"><i class="bi bi-github"></i></a></button></h3>
+              <p class="card-text">
+                • Created psresponse and pstimer test and tool which allow users to get back response time of pScheduler which allows for the  isolation of  problems when debugging pScheduler <br>
+                • The integrated contributions were built using Python and Unix command line tools. 
+              </p>
+              <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" >Python (100%)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+  crossorigin="anonymous">
+  </script>  
 </body>
 </html>
